@@ -1,0 +1,27 @@
+tiger тигр
+lion лев
+eagle орёл
+cat кот
+dog собака
+pig свинья
+hog кабан
+cow корова
+donkey осёл
+cock петух
+panther пантера
+jaguar ягуар
+cheetah гепард
+wolf волк
+leopard леопард
+elephant слон
+bison бизон
+beaver бобёр
+hedgehog ёж
+raccoon енот
+snake змея
+hare заяц
+ram баран
+lama лама
+penguin пингвин
+
+

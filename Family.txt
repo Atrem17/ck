@@ -1,0 +1,43 @@
+family семья
+relative родственник
+parents родители
+mother мать
+grandfather дедушка
+father отец
+wife жена
+husband муж
+child ребёнок
+daughter дочь
+widower вдовец
+son сын
+sister сестра
+brother брат
+grandmother бабушка
+grandchildren внуки
+grandson внук
+aunt тётя
+uncle дядя
+niece племянница
+granddaughter внучка
+nephew племянник
+divorce развод
+widow вдова
+wedding свадьба
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

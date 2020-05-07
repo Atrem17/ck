@@ -1,0 +1,43 @@
+football футбол
+basketball баскетбол
+volleyball волейбол
+hockey хоккей
+ball мяч
+tennis тенис
+golf гольф
+handball гандбол
+athletics атлетика
+baseball бейсбол
+workout тренировка
+olympiad олимпиада
+gym стортивный_зал
+endurance выносливость
+record рекорд
+championship чемпионат
+energy энергия
+victory победа
+warmup разминка
+race гонка
+badminton бадминтон
+darts дартс
+gymnastics гимнастика
+judo дзюдо
+bobsled бобслей
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

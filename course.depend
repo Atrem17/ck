@@ -1,0 +1,132 @@
+# depslib dependency file v1.0
+1588858496 source:d:\Учеба\course2\src\authors.c
+	"authors.h"
+	"menu.h"
+
+1588678627 d:\Учеба\course2\src\authors.h
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
+1588863137 d:\Учеба\course2\src\menu.h
+	<locale.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<time.h>
+
+1588858485 source:d:\Учеба\course2\src\look.c
+	"look.h"
+	"menu.h"
+
+1588678627 d:\Учеба\course2\src\look.h
+	<stdio.h>
+	<conio.h>
+	<string.h>
+
+1588858467 source:d:\Учеба\course2\src\main.c
+	"menu.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+
+1588858448 source:d:\Учеба\course2\src\menu.c
+	"authors.h"
+	"menu.h"
+	"pravila.h"
+	"vubortemy.h"
+	"vuborx.h"
+	"vvod.h"
+
+1588678627 d:\Учеба\course2\src\pravila.h
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
+1588687118 d:\Учеба\course2\src\vvod.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	<locale.h>
+
+1588687229 d:\Учеба\course2\src\vuborx.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<stdbool.h>
+
+1588687182 d:\Учеба\course2\src\vubortemy.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<windows.h>
+
+1588858378 source:d:\Учеба\course2\src\pravila.c
+	"menu.h"
+	"pravila.h"
+
+1588858351 source:d:\Учеба\course2\src\test.c
+	"look.h"
+	"menu.h"
+	"test.h"
+
+1588682266 d:\Учеба\course2\src\test.h
+	<stdio.h>
+	<conio.h>
+	<locale.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	<time.h>
+
+1588858337 source:d:\Учеба\course2\src\vubortemy.c
+	"menu.h"
+	"vubortemy.h"
+
+1588858328 source:d:\Учеба\course2\src\vuborx.c
+	"look.h"
+	"menu.h"
+	"test.h"
+	"vuborx.h"
+
+1588858294 source:d:\Учеба\course2\src\vvod.c
+	"authors.h"
+	"menu.h"
+	"pravila.h"
+	"vvod.h"
+
+1588863116 source:d:\Учеба\course2\tests.c
+	"ctest.h"
+	"src/menu.h"
+
+1588862892 d:\Учеба\course2\ctest.h
+	<inttypes.h>
+	<stddef.h>
+	<setjmp.h>
+	<stdarg.h>
+	<stdio.h>
+	<string.h>
+	<sys/time.h>
+	<unistd.h>
+	<stdint.h>
+	<stdlib.h>
+	<wchar.h>
+	<signal.h>
+
+1588863859 source:d:\Учеба\course2\test\tests.c
+	"../ctest.h"
+	"..//src/menu.h"
+
+1588863137 d:\Учеба\course2\\src\menu.h
+	<locale.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<time.h>
+

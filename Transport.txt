@@ -1,0 +1,42 @@
+car машина
+airplane самолёт 
+ship корабль
+trolleybus троллейбус
+bus автобус
+bicycle велосипед
+motorcycle мотоцикл
+helicopter вертолет
+taxi такси
+boat лодка
+train поезд
+underground метро
+snowmobile снегоход
+tram трамвай
+truck грузовик
+wagon тележка,фургон
+yacht яхта
+aerostat воздушный_шар
+rocket ракета
+ferry паром
+vessel судно
+sleigh сани
+submarine подводная_лодка
+coach карета
+hang-glider дельтаплан
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

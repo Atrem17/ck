@@ -1,0 +1,33 @@
+sofa диван
+armchair кресло
+chair стул
+table стол
+wardrobe шкаф
+bed кровать
+vase ваза
+mirror зеркало
+torchere торшер
+rug ковёр
+curtains шторы
+padded_stool пуфик
+fridge холодильник
+lamp лампа
+clock часы
+fireplace камин
+chandelier люстра
+shelf полка
+desk писменный_стол
+sideboard сервант
+
+
+
+
+
+
+
+
+
+
+
+
+

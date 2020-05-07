@@ -1,0 +1,33 @@
+tea чай
+juice сок
+water вода
+coffee кофе
+lemonade лиминад
+milk молоко
+jelly кисаль
+soda газировка
+yogurt йогурт
+kefir кефир
+kvass квас
+smoothie смузи
+cocktail коктейль
+compote компот
+nectar нектар
+syrup сироп
+fruit_drink морс
+tonic тоник
+cocoa какао
+coca-cola кока-кола
+milkshake молочный_коктейль
+
+
+
+
+
+
+
+
+
+
+
+

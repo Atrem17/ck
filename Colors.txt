@@ -1,0 +1,26 @@
+green зеленый
+blue синий
+red красный
+yellow жёлтый
+white белый
+black черный
+orange оранжевый
+purple фиолетовый
+gray серый
+brown коричневый
+turquoise бирюзовый
+pink розовый
+khaki хаки
+
+
+
+
+
+
+
+
+
+
+
+
+

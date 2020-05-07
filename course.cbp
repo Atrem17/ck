@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="course" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/course" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/course" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="thirdparty/ctest.h" />
+		<Unit filename="src/authors.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/authors.h" />
+		<Unit filename="src/look.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/look.h" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/menu.h" />
+		<Unit filename="src/pravila.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/pravila.h" />
+		<Unit filename="src/test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/test.h" />
+		<Unit filename="src/vubortemy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/vubortemy.h" />
+		<Unit filename="src/vuborx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/vuborx.h" />
+		<Unit filename="src/vvod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/vvod.h" />
+		<Unit filename="test/tests.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

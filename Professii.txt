@@ -1,0 +1,34 @@
+teacher учитель
+doctor доктор
+engineer инженер
+pilot лётчик
+ecologist эколог
+interpreter переводчик
+journalist журналист
+logistician логист
+financier финансист
+lawyer юрист
+psychologist психолог
+cosmetologist косметолог
+cosmonaut космонавт
+locksmith слесарь
+hairdresser парикмахер
+confectioner кондитер
+designer дезайнер
+stewardess стюардесса
+biologist биолог
+chemist химик
+scientist учёный
+trader торговец
+pharmacist фармацевт
+coach тренер
+programmer программист
+
+
+
+
+
+
+
+
+

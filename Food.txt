@@ -1,0 +1,49 @@
+beef говядина
+chicken курица
+ham ветчина
+turkey индейка
+venison оленина
+beet свекла
+carrot морковь
+cucumber огурец
+garlic чеснок
+peas горох
+potato картофель
+turnip репа
+apple яблоко
+berry ягода
+melon дыня
+raspberry малина
+strawberry клубника
+buckwheat гречка
+cheese сыр
+eggs яйца
+cupcake кекс
+pudding пудинг
+popcorn попкорн
+marshmallow зефир
+dessert десерт
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
