@@ -1,5 +1,5 @@
-#include "menu.h"
 #include "pravila.h"
+#include "menu.h"
 
 void pravila() {
   setlocale(LC_ALL, "UTF-8");
@@ -10,7 +10,7 @@ void pravila() {
       "подчеркивание\n3. Слова в которых нужен дефис вводить через дефис\n");
   printf("Нажмите \"TAB\", чтобы вернуться в главное меню, любой другой символ "
          "для выхода из приложения:\n");
-  a = getch();
+  a = getchar();
   if (back_tab(a)) {
     system("cls");
     menu();

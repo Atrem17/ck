@@ -12,7 +12,7 @@ void look(FILE *file, int a) {
   printf("Нажмите \"b\" чтобы вернуться в меню, \"ESC\" для выхода из "
          "приложения ");
   do {
-    x = getch();
+    x = getchar();
     if (backmenu(x)) {
       system("cls");
       print2(a);

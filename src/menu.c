@@ -1,5 +1,5 @@
-#include "authors.h"
 #include "menu.h"
+#include "authors.h"
 #include "pravila.h"
 #include "vubortemy.h"
 #include "vuborx.h"
@@ -160,4 +160,3 @@ int print2(int a) {
   vuborx(a);
   return 0;
 }
-

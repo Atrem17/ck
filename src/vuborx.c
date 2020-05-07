@@ -1,7 +1,7 @@
+#include "vuborx.h"
 #include "look.h"
 #include "menu.h"
 #include "test.h"
-#include "vuborx.h"
 #define ESCAPE 27
 #define ENTER 13
 #define BACKSPESE 8
@@ -20,7 +20,7 @@ bool input(const char *title, int a) {
   memset(buffer, 0, sizeof(buffer));
   do {
     printf("\r%s%s", title, buffer);
-    key = getch();
+    key = getchar();
     if (key > 0x30 && key < 0x3A) {
       *ptr = key;
       if (in_range(buffer, MAX))

@@ -1,6 +1,6 @@
+#include "test.h"
 #include "look.h"
 #include "menu.h"
-#include "test.h"
 #define THREE 51
 #define FIVE 53
 #define SEVEN 55
@@ -19,7 +19,7 @@ void test(FILE *file, int a) {
   i = rand() % k;
   printf("Введите количество слов в тесте (3, 5 или 7): ");
   do {
-    n = getch();
+    n = getchar();
     if (n == THREE || n == FIVE || n == SEVEN) {
       printf("\n");
       for (int j = 0; j < n - 48; j++) {
@@ -44,7 +44,7 @@ void test(FILE *file, int a) {
     printf(
         "Нажмите \"b\" для выхода из теста, \"ESC\" для выхода из приложения ");
     do {
-      t = getch();
+      t = getchar();
       if (backmenu(t)) {
         system("cls");
         print2(a);
@@ -60,7 +60,7 @@ void test(FILE *file, int a) {
            "приложения ",
            p, n - 48);
     do {
-      t = getch();
+      t = getchar();
       if (backmenu(t)) {
         system("cls");
         print2(a);
@@ -75,7 +75,7 @@ void test(FILE *file, int a) {
     printf(
         "Нажмите \"b\" для выхода из теста, \"ESC\" для выхода из приложения ");
     do {
-      t = getch();
+      t = getchar();
       if (backmenu(t)) {
         system("cls");
         print2(a);
@@ -90,7 +90,7 @@ void test(FILE *file, int a) {
            "из теста, \"ESC\" для выхода из приложения ",
            p, n - 48);
     do {
-      t = getch();
+      t = getchar();
       if (backmenu(t)) {
         system("cls");
         print2(a);
@@ -103,4 +103,3 @@ void test(FILE *file, int a) {
   }
   return;
 }
-

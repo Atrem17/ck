@@ -1,5 +1,5 @@
-#include "menu.h"
 #include "vubortemy.h"
+#include "menu.h"
 #define ESCAPE 27
 #define ENTER 13
 #define BACKSPESE 8
@@ -17,7 +17,7 @@ bool input9(const char *title) {
   memset(buffer, 0, sizeof(buffer));
   do {
     printf("\r%s%s", title, buffer);
-    key = getch();
+    key = getchar();
     if (key > 0x2F && key < 0x3A) {
       *ptr = key;
       if (in_range9(buffer, MAX9))
