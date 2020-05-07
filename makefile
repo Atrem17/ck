@@ -9,7 +9,7 @@ CFLAGS = -std=gnu11 -Wall -Werror
 all: $(DIR_BIN)/main
 	make FORMAT
 
--include build/Release/src/*.d
+-include build/src/*.d
 
 $(DIR_BIN)/main: $(DIR_BUILD_RELEASE_SRC)/main.o $(DIR_BUILD_RELEASE_SRC)/pravila.o $(DIR_BUILD_RELEASE_SRC)/menu.o $(DIR_BUILD_RELEASE_SRC)/authors.o $(DIR_BUILD_RELEASE_SRC)/test.o $(DIR_BUILD_RELEASE_SRC)/vubortemy.o $(DIR_BUILD_RELEASE_SRC)/look.o $(DIR_BUILD_RELEASE_SRC)/vuborx.o $(DIR_BUILD_RELEASE_SRC)/vvod.o
 	gcc -Wall -Werror -o $(DIR_BIN)/main $(DIR_BUILD_RELEASE_SRC)/main.o $(DIR_BUILD_RELEASE_SRC)/pravila.o $(DIR_BUILD_RELEASE_SRC)/menu.o $(DIR_BUILD_RELEASE_SRC)/authors.o $(DIR_BUILD_RELEASE_SRC)/test.o $(DIR_BUILD_RELEASE_SRC)/vubortemy.o $(DIR_BUILD_RELEASE_SRC)/look.o $(DIR_BUILD_RELEASE_SRC)/vuborx.o $(DIR_BUILD_RELEASE_SRC)/vvod.o
