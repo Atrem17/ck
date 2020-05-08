@@ -1,6 +1,5 @@
-#include "menu.h"
 #include "ctest.h"
-
+#include "menu.h"
 
 CTEST(enter, check_word_equal)
 {
