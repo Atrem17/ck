@@ -54,6 +54,10 @@ int menu() {
   for (int i = 0; i < 28; i++) {
     printf("-");
   }
+  printf("\n|         3 - Выход        |\n");
+  for (int i = 0; i < 28; i++) {
+    printf("-");
+  }
   printf("\n");
   vvod();
   return 0;
@@ -125,7 +129,7 @@ int print1() {
     printf("-");
   }
   printf("\n");
-  printf("|    \"TAB\" - Главное меню    |");
+  printf("|    \"m\" - Главное меню    |");
   printf("\n");
   for (int i = 0; i < 30; i++) {
     printf("-");
@@ -152,7 +156,7 @@ int print2(int a) {
   for (int i = 0; i < 29; i++) {
     printf("-");
   }
-  printf("\n|    \"TAB\" - Главное меню   |\n");
+  printf("\n|    \"m\" - Главное меню   |\n");
   for (int i = 0; i < 29; i++) {
     printf("-");
   }
