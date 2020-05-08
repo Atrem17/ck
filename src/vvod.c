@@ -3,7 +3,6 @@
 #include "menu.h"
 #include "pravila.h"
 #include "vubortemy.h"
-#define ESCAPE 27
 
 void vvod()
 {

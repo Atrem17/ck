@@ -2,9 +2,6 @@
 #include "menu.h"
 #include "vuborx.h"
 #include "vvod.h"
-#define ESCAPE 27
-#define ENTER 13
-#define BACK 9
 
 void vubortemy()
 {

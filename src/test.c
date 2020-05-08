@@ -1,12 +1,10 @@
 #include "test.h"
-#include "look.h"
 #include "menu.h"
 #include "vuborx.h"
 #define THREE 51
 #define FIVE 53
 #define SEVEN 55
-#define BACK 98
-#define ESCAPE 27
+#define BACK_b 98
 
 void test(FILE* file, int a)
 {
@@ -18,7 +16,7 @@ void test(FILE* file, int a)
     srand(time(NULL));
     char s[15];
     int p = 0;
-    char n, t;
+    char n;
     i = rand() % k;
     do {
         printf("Введите количество слов в тесте (3, 5 или 7): ");
@@ -40,71 +38,30 @@ void test(FILE* file, int a)
                     i = 0;
                 }
             }
+            printf("\n");
         } else {
             printf("Ошибка ввода!\n");
         }
     } while (n != THREE && n != FIVE && n != SEVEN);
-    if (p == n && (n == THREE || n == FIVE || n == SEVEN)) {
+    if ((p == n - 48) && (n == THREE || n == FIVE || n == SEVEN)) {
         printf("Отличный результат: %d/%d Поздравляем!\n", p, n - 48);
-        printf("Нажмите \"b\" для выхода из теста, любой другой символ для "
-               "выхода "
-               "из приложения ");
-        scanf("%c%*c", &t);
-        if (backmenu(t)) {
-            system("clear");
-            vuborx(a);
-        } else {
-            system("clear");
-            printf("До новых встреч!\n");
-            return;
-        }
     } else if (p == 0 && (n == THREE || n == FIVE || n == SEVEN)) {
         printf("Ужасный результат: %d/%d Нет ни одного правильного ответа! "
                "Рекомендуем обратиться к словам из темы и пройти тест "
-               "заново!\nНажмите \"b\" для выхода из теста, любой другой "
-               "символ для выхода из приложения ",
+               "заново!\n",
                p,
                n - 48);
-        scanf("%c%*c", &t);
-        if (backmenu(t)) {
-            system("clear");
-            vuborx(a);
-        } else {
-            system("clear");
-            printf("До новых встреч!\n");
-            return;
-        }
     } else if (p >= 0.65 * (n - 48)) {
         printf("Ваш результат: %d/%d Нужно постараться!\n", p, n - 48);
-        printf("Нажмите \"b\" для выхода из теста, любой другой символ для "
-               "выхода "
-               "из приложения ");
-        scanf("%c%*c", &t);
-        if (backmenu(t)) {
-            system("clear");
-            vuborx(a);
-        } else {
-            system("clear");
-            printf("До новых встреч!\n");
-            return;
-        }
     } else {
         printf("Ваш результат: %d/%d Слишком много ошибок! Рекомендуем "
                "обратиться "
-               "к словам из темы и пройти тест заново!\nНажмите \"b\" для "
-               "выхода "
-               "из теста, любой другой символ для выхода из приложения ",
+               "к словам из темы и пройти тест заново!\n",
                p,
                n - 48);
-        scanf("%c%*c", &t);
-        if (backmenu(t)) {
-            system("clear");
-            vuborx(a);
-        } else {
-            system("clear");
-            printf("До новых встреч!\n");
-            return;
-        }
     }
-    return;
+    getchar();
+    getchar();
+    system("clear");
+    vuborx(a);
 }

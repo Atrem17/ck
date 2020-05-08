@@ -1,34 +1,6 @@
-#include "../src/menu.h"
-#include "../thirdparty/ctest.h"
+#include "menu.h"
+#include "ctest.h"
 
-CTEST(translate, first_word)
-{
-    FILE* fp = fopen("Drinks.txt", "rb");
-    fread(&t1, sizeof(t1), 1, fp);
-    fclose(fp);
-    struct word expected = {"tea", "чай"};
-    ASSERT_EQUAL(1, check_word(expected.rus, t1.rus));
-}
-
-CTEST(translate, last_word)
-{
-    FILE* fp = fopen("Drinks.txt", "rb");
-    while (!feof(fp)) {
-        fread(&t1, sizeof(t1), 1, fp);
-    }
-    fclose(fp);
-    struct word expected = {"milkshake", "молочный_коктейль"};
-    ASSERT_EQUAL(1, check_word(expected.rus, t1.rus));
-}
-
-CTEST(translate, border)
-{
-    FILE* fp = fopen("Drinks.txt", "rb");
-    fread(&t1, sizeof(t1), 1, fp);
-    fclose(fp);
-    struct word expected = {"milkshake", "молочный_коктейль"};
-    ASSERT_EQUAL(0, check_word(expected.rus, t1.rus));
-}
 
 CTEST(enter, check_word_equal)
 {
@@ -57,22 +29,6 @@ CTEST(enter, check_word_empty)
     ASSERT_EQUAL(real, exp);
 }
 
-CTEST(enter, Exit_if_ESCAPE)
-{
-    int s = 27;
-    int real = end(s);
-    unsigned int exp = 1;
-    ASSERT_EQUAL(real, exp);
-}
-
-CTEST(enter, Exit_if_3)
-{
-    int s = 3;
-    int real = end(s);
-    unsigned int exp = 0;
-    ASSERT_EQUAL(real, exp);
-}
-
 CTEST(enter, Exit_if_BACK_b)
 {
     int s = 98;
@@ -81,10 +37,10 @@ CTEST(enter, Exit_if_BACK_b)
     ASSERT_EQUAL(real, exp);
 }
 
-CTEST(enter, Exit_if_BACK_TAB)
+CTEST(enter, Exit_if_BACK_m)
 {
-    int s = 9;
-    int real = back_tab(s);
+    int s = 109;
+    int real = back_m(s);
     unsigned int exp = 1;
     ASSERT_EQUAL(real, exp);
 }

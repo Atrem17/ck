@@ -17,8 +17,8 @@ void menu();
 void print1();
 void print2();
 int check_word(char* a, char* b);
-int end(int a);
 int backmenu(int a);
 int back_m(int a);
+int backm(int a);
 
 #endif

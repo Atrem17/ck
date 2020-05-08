@@ -5,20 +5,11 @@
 #include "vuborx.h"
 #include "vvod.h"
 #define BACK_b 98
-#define EXIT_z 122
 #define BACK_m 109
 
 int check_word(char* a, char* b)
 {
     if (strcmp(a, b) == 0) {
-        return 1;
-    } else {
-        return 0;
-    }
-}
-int end(int a)
-{
-    if (a == EXIT_z) {
         return 1;
     } else {
         return 0;
