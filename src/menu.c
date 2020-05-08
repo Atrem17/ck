@@ -1,12 +1,12 @@
-#include "authors.h"
 #include "menu.h"
+#include "authors.h"
 #include "pravila.h"
 #include "vubortemy.h"
 #include "vuborx.h"
 #include "vvod.h"
 #define BACK_b 98
-#define ESCAPE 27
-#define BACK_TAB 9
+#define EXIT_z 122
+#define BACK_m 109
 
 int check_word(char* a, char* b)
 {
@@ -18,7 +18,7 @@ int check_word(char* a, char* b)
 }
 int end(int a)
 {
-    if (a == ESCAPE) {
+    if (a == EXIT_z) {
         return 1;
     } else {
         return 0;
@@ -32,16 +32,16 @@ int backmenu(int a)
         return 0;
     }
 }
-int back_tab(int a)
+int back_m(int a)
 {
-    if (a == BACK_TAB) {
+    if (a == BACK_m) {
         return 1;
     } else {
         return 0;
     }
 }
 
-int menu()
+void menu()
 {
     setlocale(LC_ALL, "UTF-8");
     for (int i = 0; i < 28; i++) {
@@ -59,16 +59,15 @@ int menu()
     for (int i = 0; i < 28; i++) {
         printf("-");
     }
-    printf("\n|         3 - Выход        |\n");
+    printf("\n|        3 - Выход         |\n");
     for (int i = 0; i < 28; i++) {
         printf("-");
     }
     printf("\n");
-    vvod();
-    return 0;
+    printf("Пожалуйста, выберите номер из меню (0, 1, 2, 3): ");
 }
 
-int print1()
+void print1()
 {
     setlocale(LC_ALL, "UTF-8");
     for (int i = 0; i < 30; i++) {
@@ -135,17 +134,23 @@ int print1()
         printf("-");
     }
     printf("\n");
-    printf("|    \"m\" - Главное меню    |");
+    printf("|     \"m\" - Главное меню     |");
     printf("\n");
     for (int i = 0; i < 30; i++) {
         printf("-");
     }
     printf("\n");
-    vubortemy();
-    return 0;
+    printf("|         \"z\" - Выход        |");
+    printf("\n");
+    for (int i = 0; i < 30; i++) {
+        printf("-");
+    }
+    printf("\n");
+    printf("Пожалуйста, выберите номер или букву из меню (от 0 до 9; или "
+           "\"m\", или \"z\": ");
 }
 
-int print2(int a)
+void print2()
 {
     setlocale(LC_ALL, "UTF-8");
     for (int i = 0; i < 29; i++) {
@@ -163,11 +168,15 @@ int print2(int a)
     for (int i = 0; i < 29; i++) {
         printf("-");
     }
-    printf("\n|    \"m\" - Главное меню   |\n");
+    printf("\n|        4 - Выход          |\n");
+    for (int i = 0; i < 29; i++) {
+        printf("-");
+    }
+    printf("\n|     \"m\" - Главное меню    |\n");
     for (int i = 0; i < 29; i++) {
         printf("-");
     }
     printf("\n");
-    vuborx(a);
-    return 0;
+    printf("Пожалуйста, выберите номер или букву из меню (1, 2, 3, 4; или "
+           "\"m\"): ");
 }

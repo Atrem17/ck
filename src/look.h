@@ -3,6 +3,6 @@
 #include <stdio.h>
 #include <string.h>
 
-void look(FILE *file, int a);
+void look(FILE* file, int a);
 
 #endif

@@ -6,6 +6,6 @@
 #include <string.h>
 #include <time.h>
 
-void test(FILE *file, int a);
+void test(FILE* file, int a);
 
 #endif

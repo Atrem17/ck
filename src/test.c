@@ -1,6 +1,7 @@
+#include "test.h"
 #include "look.h"
 #include "menu.h"
-#include "test.h"
+#include "vuborx.h"
 #define THREE 51
 #define FIVE 53
 #define SEVEN 55
@@ -16,11 +17,12 @@ void test(FILE* file, int a)
     }
     srand(time(NULL));
     char s[15];
-    int t, n, p = 0;
+    int p = 0;
+    char n, t;
     i = rand() % k;
-    printf("Введите количество слов в тесте (3, 5 или 7): ");
     do {
-        n = getchar();
+        printf("Введите количество слов в тесте (3, 5 или 7): ");
+        scanf("%c%*c", &n);
         if (n == THREE || n == FIVE || n == SEVEN) {
             printf("\n");
             for (int j = 0; j < n - 48; j++) {
@@ -38,74 +40,71 @@ void test(FILE* file, int a)
                     i = 0;
                 }
             }
+        } else {
+            printf("Ошибка ввода!\n");
         }
     } while (n != THREE && n != FIVE && n != SEVEN);
     if (p == n && (n == THREE || n == FIVE || n == SEVEN)) {
         printf("Отличный результат: %d/%d Поздравляем!\n", p, n - 48);
-        printf("Нажмите \"b\" для выхода из теста, \"ESC\" для выхода из "
-               "приложения ");
-        do {
-            t = getchar();
-            if (backmenu(t)) {
-                system("cls");
-                print2(a);
-            }
-        } while (t != ESCAPE);
-        system("cls");
-        printf("До новых встреч!");
-        return;
+        printf("Нажмите \"b\" для выхода из теста, любой другой символ для "
+               "выхода "
+               "из приложения ");
+        scanf("%c%*c", &t);
+        if (backmenu(t)) {
+            system("clear");
+            vuborx(a);
+        } else {
+            system("clear");
+            printf("До новых встреч!\n");
+            return;
+        }
     } else if (p == 0 && (n == THREE || n == FIVE || n == SEVEN)) {
         printf("Ужасный результат: %d/%d Нет ни одного правильного ответа! "
                "Рекомендуем обратиться к словам из темы и пройти тест "
-               "заново!\nНажмите \"b\" для выхода из теста, \"ESC\" для выхода "
-               "из "
-               "приложения ",
+               "заново!\nНажмите \"b\" для выхода из теста, любой другой "
+               "символ для выхода из приложения ",
                p,
                n - 48);
-        do {
-            t = getchar();
-            if (backmenu(t)) {
-                system("cls");
-                print2(a);
-            } else if (end(t)) {
-                system("cls");
-                printf("До новых встреч!");
-                return;
-            }
-        } while (t != BACK && t != ESCAPE);
+        scanf("%c%*c", &t);
+        if (backmenu(t)) {
+            system("clear");
+            vuborx(a);
+        } else {
+            system("clear");
+            printf("До новых встреч!\n");
+            return;
+        }
     } else if (p >= 0.65 * (n - 48)) {
         printf("Ваш результат: %d/%d Нужно постараться!\n", p, n - 48);
-        printf("Нажмите \"b\" для выхода из теста, \"ESC\" для выхода из "
-               "приложения ");
-        do {
-            t = getchar();
-            if (backmenu(t)) {
-                system("cls");
-                print2(a);
-            }
-        } while (t != ESCAPE);
-        system("cls");
-        printf("До новых встреч!");
-        return;
+        printf("Нажмите \"b\" для выхода из теста, любой другой символ для "
+               "выхода "
+               "из приложения ");
+        scanf("%c%*c", &t);
+        if (backmenu(t)) {
+            system("clear");
+            vuborx(a);
+        } else {
+            system("clear");
+            printf("До новых встреч!\n");
+            return;
+        }
     } else {
         printf("Ваш результат: %d/%d Слишком много ошибок! Рекомендуем "
                "обратиться "
                "к словам из темы и пройти тест заново!\nНажмите \"b\" для "
                "выхода "
-               "из теста, \"ESC\" для выхода из приложения ",
+               "из теста, любой другой символ для выхода из приложения ",
                p,
                n - 48);
-        do {
-            t = getchar();
-            if (backmenu(t)) {
-                system("cls");
-                print2(a);
-            } else if (end(t)) {
-                system("cls");
-                printf("До новых встреч!");
-                return;
-            }
-        } while (t != BACK && t != ESCAPE);
+        scanf("%c%*c", &t);
+        if (backmenu(t)) {
+            system("clear");
+            vuborx(a);
+        } else {
+            system("clear");
+            printf("До новых встреч!\n");
+            return;
+        }
     }
     return;
 }
